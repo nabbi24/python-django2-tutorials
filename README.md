@@ -2,6 +2,14 @@
 
 ## Setting up a Python development environment
 
+We won't either commit `venv` files to git repos or add them to `.gitignore`.
+
+All we have to do is to make 2 kinds of files:
+- local `venv` files 
+- a project `requirement.txt`.
+
+### Procedure
+
 1. Create a Python venv folder
 
     ```
