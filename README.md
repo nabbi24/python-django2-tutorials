@@ -150,3 +150,32 @@ All we have to do is to make 2 kinds of files:
     │   └── wsgi.py
     └── manage.py
     ```
+
+---
+
+## Create apps
+
+### Create loaders
+
+1. Create an app
+
+    ```
+    python manage.py startapp loaders
+    ```
+    
+    ###### Dirs
+
+    ```
+    .
+    ├── hosenka
+    ├── loaders
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    └── manage.py
+    ```
