@@ -124,12 +124,6 @@ https://docs.djangoproject.com/ja/2.0/intro
     python manage.py migrate
     ```
 
-1. Create a super user
-
-    ```
-    python manage.py createsuperuser
-    ```
-
 1. Run the server
 
     ```
@@ -139,7 +133,8 @@ https://docs.djangoproject.com/ja/2.0/intro
     Now you can access:
     
     - `http://127.0.0.1:8000`
-    - `http://127.0.0.1:8000/admin`
+    
+    You can stop the server to click `Ctrl + C`.
     
     ###### Dirs
     
@@ -211,3 +206,18 @@ https://docs.djangoproject.com/ja/2.0/intro
         ```
         python manage.py migrate
         ```
+
+---
+
+## Create a super user
+
+1. Create a super user
+
+    ```
+    python manage.py createsuperuser
+    ```
+
+    Now you can access after run the server:
+    
+    - `http://127.0.0.1:8000/admin`
+  
