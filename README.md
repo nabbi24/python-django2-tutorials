@@ -141,19 +141,12 @@ All we have to do is to make 2 kinds of files:
     
     ```
     .
-    ├── LICENSE
-    ├── README.md
     ├── db.sqlite3
     ├── hosenka
     │   ├── __init__.py
     │   ├── __pycache__
-    │   │   ├── __init__.cpython-36.pyc
-    │   │   ├── settings.cpython-36.pyc
-    │   │   ├── urls.cpython-36.pyc
-    │   │   └── wsgi.cpython-36.pyc
     │   ├── settings.py
     │   ├── urls.py
     │   └── wsgi.py
-    ├── manage.py
-    └── requirement.txt
+    └── manage.py
     ```
