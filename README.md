@@ -6,7 +6,7 @@ We won't either commit `venv` files to git repos or add them to `.gitignore`.
 
 All we have to do is to make 2 kinds of files:
 - local `venv` files 
-- a project `requirement.txt` which manage Python packages versions.
+- a project `requirement.txt` which manage Python packages versions
 
 ### Procedure
 
@@ -25,6 +25,14 @@ All we have to do is to make 2 kinds of files:
 
     ```
     source bin/activate
+    ```
+
+1. Ref: Deacticate
+
+    When you want to deactivate, just run the below command:
+
+    ```
+    deactivate
     ```
 
 #### Those who create an environment (Such as managers)
