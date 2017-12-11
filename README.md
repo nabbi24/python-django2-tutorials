@@ -1,6 +1,6 @@
 # hosenka
 
-## Setting up a Python Django development environment
+## Setting up a Python development environment
 
 1. Create a Python venv folder
 
