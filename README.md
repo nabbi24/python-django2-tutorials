@@ -94,14 +94,14 @@ All we have to do is to make 2 kinds of files:
 
     ```
     cd [YOUR_GIT_REPO_ROOT_DIR]
-    django-admin startproject hosenka .
+    django-admin startproject mysite .
     ```
     
     ###### Dirs
     
     ```
     .
-    ├── hosenka
+    ├── mysite
     │   ├── __init__.py
     │   ├── settings.py
     │   ├── urls.py
@@ -142,7 +142,7 @@ All we have to do is to make 2 kinds of files:
     ```
     .
     ├── db.sqlite3
-    ├── hosenka
+    ├── mysite
     │   ├── __init__.py
     │   ├── __pycache__
     │   ├── settings.py
@@ -167,7 +167,6 @@ All we have to do is to make 2 kinds of files:
 
     ```
     .
-    ├── hosenka
     ├── loaders
     │   ├── __init__.py
     │   ├── admin.py
@@ -177,5 +176,6 @@ All we have to do is to make 2 kinds of files:
     │   ├── models.py
     │   ├── tests.py
     │   └── views.py
+    ├── mysite
     └── manage.py
     ```
