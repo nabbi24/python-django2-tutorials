@@ -186,7 +186,7 @@ https://docs.djangoproject.com/ja/2.0/intro
 
 1. Define models
 
-1. Migrate
+    1. Modify `loaders/models.py`
 
     1. Make migrations
 
