@@ -90,7 +90,7 @@ All we have to do is to make 2 kinds of files:
 
 ## Create a Django project
 
-##### (ref) Public tutorials
+    ###### (ref) Public tutorials
 
     https://docs.djangoproject.com/ja/2.0/intro
 
