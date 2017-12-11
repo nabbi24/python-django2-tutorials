@@ -92,7 +92,7 @@ All we have to do is to make 2 kinds of files:
 
 ##### (ref) Public tutorials
 
-    - https://docs.djangoproject.com/ja/2.0/intro
+    https://docs.djangoproject.com/ja/2.0/intro
 
 1. Start a project
 
