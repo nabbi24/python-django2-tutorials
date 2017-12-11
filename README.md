@@ -1,5 +1,9 @@
 # hosenka
 
+Welcome.
+
+---
+
 ## Setting up a Python development environment
 
 We won't either commit `venv` files to git repos or add them to `.gitignore`.
@@ -31,7 +35,7 @@ All we have to do is to make 2 kinds of files:
     source bin/activate
     ```
 
-1. Ref: Deacticate
+1. (Ref) Deacticate
 
     When you want to deactivate it, just run the below command:
 
@@ -80,4 +84,76 @@ All we have to do is to make 2 kinds of files:
 
     ```
     pip install -r requirement.txt
+    ```
+
+---
+
+## Create a Django project
+
+1. Start a project
+
+    ```
+    cd [YOUR_GIT_REPO_ROOT_DIR]
+    django-admin startproject hosenka .
+    ```
+    
+    ###### Dirs
+    
+    ```
+    .
+    ├── hosenka
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── manage.py
+    ```
+
+1. Change settings.py
+
+    - Language
+    - Timezone
+
+1. Migrate (Setting up DB)
+
+    ```
+    python manage.py migrate
+    ```
+
+1. Create a super user
+
+    ```
+    python manage.py createsuperuser
+    ```
+
+1. Run the server
+
+    ```
+    python manage.py runserver
+    ```
+    
+    Now you can access:
+    
+    - `http://127.0.0.1:8000`
+    - `http://127.0.0.1:8000/admin`
+    
+    ###### Dirs
+    
+    ```
+    .
+    ├── LICENSE
+    ├── README.md
+    ├── db.sqlite3
+    ├── hosenka
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   │   ├── __init__.cpython-36.pyc
+    │   │   ├── settings.cpython-36.pyc
+    │   │   ├── urls.cpython-36.pyc
+    │   │   └── wsgi.cpython-36.pyc
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── manage.py
+    └── requirement.txt
     ```
