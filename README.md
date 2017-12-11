@@ -113,7 +113,7 @@ https://docs.djangoproject.com/ja/2.0/intro
     └── manage.py
     ```
 
-1. Change `hosenka/settings.py`
+1. Modify `hosenka/settings.py`
 
     - Language
     - Timezone
@@ -183,3 +183,31 @@ https://docs.djangoproject.com/ja/2.0/intro
     ├── mysite
     └── manage.py
     ```
+
+1. Define models
+
+1. Migrate
+
+    1. Make migrations
+
+        ```
+        python manage.py makemigrations loaders
+        ```
+    
+    1. (ref) Check what is planned
+    
+        ```
+        python manage.py sqlmigrate loaders 0001
+        ```
+
+        or
+
+        ```
+        python manage.py check
+        ```
+    
+    1. Execute migrations
+    
+        ```
+        python manage.py migrate
+        ```
