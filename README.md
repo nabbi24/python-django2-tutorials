@@ -10,6 +10,10 @@ All we have to do is to make 2 kinds of files:
 
 ### Procedure
 
+#### Premises
+
+- Python version is: 3.6
+
 #### Common
 
 1. Create a Python venv folder
@@ -17,8 +21,8 @@ All we have to do is to make 2 kinds of files:
     ```
     mkdir ~/.env
     cd ~/.env
-    python -m vnev python-3.6.3
-    cd python-3.6.3
+    python3.6 -m vnev python-3.6
+    cd python-3.6
     ```
 
 1. Activate a Python venv
