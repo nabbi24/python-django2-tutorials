@@ -109,7 +109,7 @@ All we have to do is to make 2 kinds of files:
     └── manage.py
     ```
 
-1. Change settings.py
+1. Change `hosenka/settings.py`
 
     - Language
     - Timezone
