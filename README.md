@@ -35,7 +35,7 @@ All we have to do is to make 2 kinds of files:
     source bin/activate
     ```
 
-1. (Ref) Deacticate
+1. (ref) Deacticate
 
     When you want to deactivate it, just run the below command:
 
@@ -43,7 +43,7 @@ All we have to do is to make 2 kinds of files:
     deactivate
     ```
 
-#### Those who create an environment (Such as managers)
+#### Those who create an environment (such as managers)
 
 1. Create [YOUR_GIT_REPO]
 
@@ -71,7 +71,7 @@ All we have to do is to make 2 kinds of files:
     git push origin master # or [ANY_OF_YOUR_BRANCH]
     ```
 
-### Those who prepare an environment (Such as developers)
+### Those who prepare an environment (such as developers)
 
 1. Git clone
 
@@ -89,6 +89,10 @@ All we have to do is to make 2 kinds of files:
 ---
 
 ## Create a Django project
+
+##### (ref) Public tutorials
+
+    - https://docs.djangoproject.com/ja/2.0/intro
 
 1. Start a project
 
