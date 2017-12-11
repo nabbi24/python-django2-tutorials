@@ -33,7 +33,7 @@ All we have to do is to make 2 kinds of files:
 
 1. Ref: Deacticate
 
-    When you want to deactivate, just run the below command:
+    When you want to deactivate it, just run the below command:
 
     ```
     deactivate
