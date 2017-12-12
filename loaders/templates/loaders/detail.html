@@ -1,1 +1,6 @@
-Form Id: {{ form_id }}
+<h1>Form Id: {{ form.form_id }}</h1>
+<ul>
+{% for a in form.agency_set.all %} 
+    <li>{{ a.agency_id }}</li>
+{% endfor %}
+</ul>

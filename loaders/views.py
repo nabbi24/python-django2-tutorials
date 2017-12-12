@@ -13,8 +13,8 @@ def index(request):
     return render(request, 'loaders/index.html', context)
 
 def detail(request, form_id):
-    fs = get_object_or_404(CommissionForm, form_id=form_id)
-    return render(request, 'loaders/detail.html', {'form_id': form_id})
+    form = get_object_or_404(CommissionForm, form_id=form_id)
+    return render(request, 'loaders/detail.html', {'form': form})
 
 def results(request, form_id):
     response = "You're looking at the results of form %s."
