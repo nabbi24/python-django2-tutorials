@@ -8,8 +8,11 @@ from .models import CommissionForm
 
 def index(request):
     fs = CommissionForm.objects.order_by('form_id')[:5]
-    output = ', '.join([f.form_id for f in fs])
-    return HttpResponse(output)
+    template = loader.get_template('loaders/index.html')
+    context = {
+        'commission_form_list': fs,
+    }
+    return HttpResponse(template.render(context, request))
 
 def detail(request, form_id):
     return HttpResponse("You're looking at form %s." % form_id)
