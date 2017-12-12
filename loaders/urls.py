@@ -2,6 +2,7 @@ from django.urls import path
 
 from . import views
 
+app_name = 'loaders'
 urlpatterns = [
     path('', views.index, name='index'),
     path('<int:form_id>/', views.detail, name='detail'),
