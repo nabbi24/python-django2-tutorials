@@ -234,6 +234,8 @@ https://docs.djangoproject.com/ja/2.0/intro
     ]
     ```
 
+1. Modify `loaders/models.py` and `loaders/views.py`
+
 ## Use templates
 
 1. Create directories
@@ -244,6 +246,6 @@ https://docs.djangoproject.com/ja/2.0/intro
 
 1. Make an `index.html`
 
-1. Modify views
+1. Modify `loaders/views.py`
 
-1. User Django shortcuts
+1. Use Django shortcuts in `views.py`
