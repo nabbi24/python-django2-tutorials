@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 from django.http import HttpResponse, Http404
@@ -13,10 +13,7 @@ def index(request):
     return render(request, 'loaders/index.html', context)
 
 def detail(request, form_id):
-    try:
-        fs = CommissionForm.objects.get(form_id=form_id)
-    except CommissionForm.DoesNotExist:
-        raise Http404("The Form does not exist.")
+    fs = get_object_or_404(CommissionForm, form_id=form_id)
     return render(request, 'loaders/detail.html', {'form_id': form_id})
 
 def results(request, form_id):
