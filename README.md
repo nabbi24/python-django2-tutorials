@@ -221,3 +221,15 @@ https://docs.djangoproject.com/ja/2.0/intro
     
     - `http://127.0.0.1:8000/admin`
   
+## Add an app config
+
+1. Modify 'mysite/settings.py'
+
+    Add a loaders' config to `INSTALLED_APPS`:
+
+    ```
+    INSTALLED_APPS = [
+        'loaders.apps.LoadersConfig',
+        ...
+    ]
+    ```
