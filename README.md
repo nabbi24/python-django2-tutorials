@@ -249,3 +249,9 @@ https://docs.djangoproject.com/ja/2.0/intro
 1. Modify `loaders/views.py`
 
 1. Use Django shortcuts in `views.py`
+
+## Add namespaces
+
+1. Add `APP_NAME` to `loaders/urls.py`
+
+1. Use the name in templates
