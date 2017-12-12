@@ -244,7 +244,7 @@ https://docs.djangoproject.com/ja/2.0/intro
     mkdir -p loaders/templates/loaders
     ```
 
-1. Make an `index.html`
+1. Make htmls such as `index.html` in `loaders/templates/loaders`
 
 1. Modify `loaders/views.py`
 
