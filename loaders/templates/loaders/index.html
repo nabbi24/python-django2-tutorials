@@ -1,7 +1,7 @@
 {% if commission_form_list %}
     <ul>
     {% for f in commission_form_list %}
-        <li><a href="/loaders/{{ f.form_id }}/">{{ f.form_id }}</a></li>
+    <li><a href="{% url 'detail' f.form_id %}">{{ f.form_id }}</a></li>
     {% endfor %}
     </ul>
 {% else %}
