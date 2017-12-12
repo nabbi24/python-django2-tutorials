@@ -233,3 +233,19 @@ https://docs.djangoproject.com/ja/2.0/intro
         ...
     ]
     ```
+
+1. Modify `loaders/models.py` and `loaders/views.py`
+
+## Use templates
+
+1. Create directories
+
+    ```
+    mkdir -p loaders/templates/loaders
+    ```
+
+1. Make htmls such as `index.html` in `loaders/templates/loaders`
+
+1. Modify `loaders/views.py`
+
+1. Use Django shortcuts in `views.py`
