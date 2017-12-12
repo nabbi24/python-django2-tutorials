@@ -250,8 +250,12 @@ https://docs.djangoproject.com/ja/2.0/intro
 
 1. Use Django shortcuts in `views.py`
 
+1. In templates, Replace hard-coded urls to `url` functions.
+
 ## Add namespaces
 
 1. Add `APP_NAME` to `loaders/urls.py`
 
 1. Use the name in templates
+
+1. In `url` functions in templates, Add namespaces to url-names.
