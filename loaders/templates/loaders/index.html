@@ -1,3 +1,7 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'loaders/style.css' %}" />
+
 {% if latest_commission_form_list %}
     <ul>
     {% for f in latest_commission_form_list %}
