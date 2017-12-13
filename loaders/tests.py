@@ -4,9 +4,13 @@ from django.test import TestCase
 import datetime
 
 from django.utils import timezone
+from django.urls import reverse
 
 from .models import CommissionForm
 
+def create_form(form_id, days):
+    time = timezone.now() + datetime.timedelta(days=days)
+    return CommissionForm.objects.create(form_id=form_id, pub_date=time)
 
 class CommissionFormTests(TestCase):
     
@@ -33,4 +37,55 @@ class CommissionFormTests(TestCase):
         time = timezone.now() + datetime.timedelta(days=30)
         future_form = CommissionForm(pub_date=time)
         self.assertIs(future_form.was_published_recently(), False)
+
+class LoadersIndexViewTests(TestCase):
+    def test_no_forms(self):
+        """
+        If no forms exist, an appropriate message is displayed.
+        """
+        response = self.client.get(reverse('loaders:index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "No forms are available.")
+        self.assertQuerysetEqual(response.context['latest_commission_form_list'], [])
+
+    def test_past_question(self):
+        """
+        Forms with a pub_date in the past are displayed on the index page.
+        """
+        create_form(form_id="past01", days=-30)
+        response = self.client.get(reverse('loaders:index'))
+        self.assertQuerysetEqual(response.context['latest_commission_form_list'], ['<CommissionForm: past01>'])
+
+    def test_future_form(self):
+        """
+        Forms with a pub_date in the future aren't displayed on the index page.
+        """
+        create_form(form_id="future01", days=30)
+        response = self.client.get(reverse('loaders:index'))
+        self.assertContains(response, "No forms are available.")
+        self.assertQuerysetEqual(response.context['latest_commission_form_list'], [])
+
+    def test_future_form_and_past_form(self):
+        """
+        Even if both past and future forms exist, only past forms are displayed.
+        """
+        create_form(form_id="past01", days=-30)
+        create_form(form_id="future01", days=30)
+        response = self.client.get(reverse('loaders:index'))
+        self.assertQuerysetEqual(
+            response.context['latest_commission_form_list'],
+            ['<CommissionForm: past01>']
+        )
+
+    def test_two_past_forms(self):
+        """
+        The forms index page may display multiple forms.
+        """
+        create_form(form_id="past01", days=-30)
+        create_form(form_id="past02", days=-5)
+        response = self.client.get(reverse('loaders:index'))
+        self.assertQuerysetEqual(
+            response.context['latest_commission_form_list'],
+            ['<CommissionForm: past02>', '<CommissionForm: past01>']
+        )
 
