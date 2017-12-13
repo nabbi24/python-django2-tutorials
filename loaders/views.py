@@ -3,15 +3,17 @@ from django.shortcuts import render, get_object_or_404
 # Create your views here.
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+from django.views import generic
 
 from .models import CommissionForm, Agency
 
-def index(request):
-    fs = CommissionForm.objects.order_by('form_id')[:5]
-    context = {
-        'commission_form_list': fs,
-    }
-    return render(request, 'loaders/index.html', context)
+class IndexView(generic.ListView):
+    template_name = 'loaders/index.html'
+    context_object_name = 'latest_commission_form_list'
+
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return CommissionForm.objects.order_by('-pub_date')[:5]
 
 def detail(request, form_id):
     form = get_object_or_404(CommissionForm, pk=form_id)
