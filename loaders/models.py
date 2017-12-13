@@ -14,7 +14,7 @@ class Agency(models.Model):
         on_delete=models.CASCADE
     )
     agency_id = models.CharField(max_length=12, default='')
-    areas = models.IntegerField(default=0)
+    area = models.IntegerField(default=0)
 
     def __str__(self):
         return self.agency_id
