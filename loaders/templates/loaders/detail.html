@@ -1,4 +1,4 @@
-<h1>Form Id: {{ form.form_id }}</h1>
+<h1>Form Id: {{ object.form_id }}</h1>
 
 {% if error_message %}
     <p>
@@ -6,9 +6,9 @@
     </p>
 {% endif %}
 
-<form action="{% url 'loaders:load' form.id %}" method="post">
+<form action="{% url 'loaders:load' object.id %}" method="post">
     {% csrf_token %}
-    {% for a in form.agency_set.all %}
+    {% for a in object.agency_set.all %}
         <input type="radio" name="agency" id="agency{{ forloop.counter }}" value="{{ a.id }}" />
         <label for="agency{{ forloop.counter }}">{{ a.agency_id }}</label>
         <br>

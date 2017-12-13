@@ -1,9 +1,9 @@
-<h1>{{ form.form_id }}</h1>
+<h1>{{ object.form_id }}</h1>
 
 <ul>
-{% for a in form.agency_set.all %}
+{% for a in object.agency_set.all %}
     <li>{{ a.agency_id }} Agency -- {{ a.area}} Area{{ a.area|pluralize }}</li>
 {% endfor %}
 </ul>
 
-<a href="{% url 'loaders:detail' form.id %}">Load again</a>
+<a href="{% url 'loaders:detail' object.id %}">Load again</a>
