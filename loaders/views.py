@@ -14,12 +14,8 @@ def index(request):
     return render(request, 'loaders/index.html', context)
 
 def detail(request, form_id):
-    form = get_object_or_404(CommissionForm, form_id=form_id)
+    form = get_object_or_404(CommissionForm, pk=form_id)
     return render(request, 'loaders/detail.html', {'form': form})
-
-def results(request, form_id):
-    response = "You're looking at the results of form %s."
-    return HttpResponse(response % form_id)
 
 def load(request, form_id):
     form = get_object_or_404(CommissionForm, pk=form_id)
@@ -35,3 +31,7 @@ def load(request, form_id):
         selected_agency.save()
         
         return HttpResponseRedirect(reverse('loaders:results', args=(form.id,)))
+
+def results(request, form_id):
+    form = get_object_or_404(CommissionForm, pk=form_id)
+    return render(request, 'loaders/results.html', {'form': form})
