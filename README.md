@@ -259,3 +259,49 @@ https://docs.djangoproject.com/ja/2.0/intro
 1. Use the name in templates
 
 1. In `url` functions in templates, Add namespaces to url-names.
+
+## Finally
+
+- Dir
+
+    ```
+    hosenka
+    ├── db.sqlite3
+    ├── loaders
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   │   └── (...).pyc
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   ├── (...).py
+    │   │   ├── __init__.py
+    │   │   └── __pycache__
+    │   ├── models.py
+    │   ├── static
+    │   │   └── loaders
+    │   │       ├── images
+    │   │       │   └── background.gif
+    │   │       └── style.css
+    │   ├── templates
+    │   │   └── loaders
+    │   │       ├── detail.html
+    │   │       ├── index.html
+    │   │       └── results.html
+    │   ├── tests.py
+    │   ├── urls.py
+    │   └── views.py
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── __pycache__
+    │   │   └── (...).pyc
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    ├── requirement.txt
+    └── templates
+        └── admin
+            ├── base_site.html
+            └── index.html
+    ```
