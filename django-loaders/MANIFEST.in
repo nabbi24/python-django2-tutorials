@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include loaders/static *
+recursive-include loaders/templates *
+recursive-include loaders/docs *
+
