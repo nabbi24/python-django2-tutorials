@@ -15,5 +15,6 @@ class CommissionFormAdmin(admin.ModelAdmin):
     inlines = [AgencyInline]
     list_display = ('form_id', 'pub_date', 'was_published_recently')
     list_filter = ['pub_date']
+    search_fields = ['form_id']
 
 admin.site.register(CommissionForm, CommissionFormAdmin)
