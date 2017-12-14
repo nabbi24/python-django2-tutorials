@@ -4,6 +4,9 @@ from django.contrib import admin
 from .models import CommissionForm
 
 class CommissionFormAdmin(admin.ModelAdmin):
-    fields = ['pub_date', 'form_id']
+    fieldsets = [
+        (None,                  {'fields': ['form_id']}),
+        ('Date information',    {'fields': ['pub_date']}),
+    ]
 
 admin.site.register(CommissionForm, CommissionFormAdmin)
