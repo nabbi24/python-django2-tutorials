@@ -18,3 +18,5 @@ class CommissionFormAdmin(admin.ModelAdmin):
     search_fields = ['form_id']
 
 admin.site.register(CommissionForm, CommissionFormAdmin)
+
+admin.AdminSite.site_header = "Loaders Administration"
