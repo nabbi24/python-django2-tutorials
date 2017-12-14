@@ -13,6 +13,6 @@ class CommissionFormAdmin(admin.ModelAdmin):
         ('Date information',    {'fields': ['pub_date'], 'classes': ['collapse']}),
     ]
     inlines = [AgencyInline]
-    list_display = ('form_id', 'pub_date')
+    list_display = ('form_id', 'pub_date', 'was_published_recently')
 
 admin.site.register(CommissionForm, CommissionFormAdmin)
