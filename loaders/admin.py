@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from .models import CommissionForm, Agency
 
-class AgencyInline(admin.StackedInline):
+class AgencyInline(admin.TabularInline):
     model = Agency
     extra = 3
 
