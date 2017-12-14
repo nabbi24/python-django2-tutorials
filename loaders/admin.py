@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import CommissionForm
+from .models import CommissionForm, Agency
 
 class CommissionFormAdmin(admin.ModelAdmin):
     fieldsets = [
@@ -10,3 +10,4 @@ class CommissionFormAdmin(admin.ModelAdmin):
     ]
 
 admin.site.register(CommissionForm, CommissionFormAdmin)
+admin.site.register(Agency)
