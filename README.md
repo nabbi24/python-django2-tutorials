@@ -117,7 +117,7 @@ https://docs.djangoproject.com/ja/2.0/intro
     └── manage.py
     ```
 
-1. Modify `silk-road/settings.py`
+1. Modify `mysite/settings.py`
 
     - Language
     - Timezone
