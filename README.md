@@ -102,14 +102,14 @@ https://docs.djangoproject.com/ja/2.0/intro
 
     ```
     cd [YOUR_GIT_REPO_ROOT_DIR]
-    django-admin startproject mysite .
+    django-admin startproject silk-road .
     ```
     
     ###### Dirs
     
     ```
     .
-    ├── mysite
+    ├── silk-road
     │   ├── __init__.py
     │   ├── settings.py
     │   ├── urls.py
@@ -117,7 +117,7 @@ https://docs.djangoproject.com/ja/2.0/intro
     └── manage.py
     ```
 
-1. Modify `mysite/settings.py`
+1. Modify `silk-road/settings.py`
 
     - Language
     - Timezone
@@ -145,7 +145,7 @@ https://docs.djangoproject.com/ja/2.0/intro
     ```
     .
     ├── db.sqlite3
-    ├── mysite
+    ├── silk-road
     │   ├── __init__.py
     │   ├── __pycache__
     │   ├── settings.py
@@ -179,7 +179,7 @@ https://docs.djangoproject.com/ja/2.0/intro
     │   ├── models.py
     │   ├── tests.py
     │   └── views.py
-    ├── mysite
+    ├── silk-road
     └── manage.py
     ```
 
@@ -227,7 +227,7 @@ https://docs.djangoproject.com/ja/2.0/intro
   
 ## Add an app config
 
-1. Modify 'mysite/settings.py'
+1. Modify 'silk-road/settings.py'
 
     Add a loaders' config to `INSTALLED_APPS`:
 
@@ -296,7 +296,7 @@ https://docs.djangoproject.com/ja/2.0/intro
     │   ├── urls.py
     │   └── views.py
     ├── manage.py
-    ├── mysite
+    ├── silk-road
     │   ├── __init__.py
     │   ├── __pycache__
     │   │   └── (...).pyc
