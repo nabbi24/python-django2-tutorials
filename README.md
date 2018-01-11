@@ -14,7 +14,7 @@ All we have to do is to make 2 kinds of files:
 
 ### Procedure
 
-#### Premises
+#### Precondition
 
 - Python version is: 3.6
 
