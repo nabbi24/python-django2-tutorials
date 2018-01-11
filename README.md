@@ -1,6 +1,6 @@
-# hosenka
+# Silk Road
 
-Welcome.
+We aim to make it easier to calculate the fees of employees which makes them happier.
 
 ---
 
