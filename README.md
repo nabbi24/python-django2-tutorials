@@ -9,7 +9,7 @@ We aim to make it easier to calculate the fees of employees which makes them hap
 We won't either commit `venv` files to git repos or add them to `.gitignore`.
 
 All we have to do is to make 2 kinds of files:
-- local `venv` files in ~/.env
+- local `venv` files in `~/.env`
 - a project `requirement.txt` which manage Python packages versions
 
 ### Procedure
