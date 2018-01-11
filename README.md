@@ -73,6 +73,8 @@ All we have to do is to make 2 kinds of files:
 
 ### Those who prepare an environment (such as developers)
 
+If you are a following developer, move to the next section.
+
 1. Git clone
 
     ```
