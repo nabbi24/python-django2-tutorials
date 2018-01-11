@@ -117,7 +117,7 @@ https://docs.djangoproject.com/ja/2.0/intro
     └── manage.py
     ```
 
-1. Modify `hosenka/settings.py`
+1. Modify `silk-road/settings.py`
 
     - Language
     - Timezone
@@ -269,7 +269,7 @@ https://docs.djangoproject.com/ja/2.0/intro
 - Dir
 
     ```
-    hosenka
+    silk-road
     ├── db.sqlite3
     ├── loaders
     │   ├── __init__.py
